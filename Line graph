@@ -15,3 +15,18 @@ plt.ylabel('Marks')
 plt.title('Marks of 2 students')
 plt.legend(title='mark details')
 plt.show()
+
+
+import matplotlib.pyplot as plt 
+
+time=[0,5,10,15,20,25,30]
+vel1=[10,15,20,20,30,15,0]
+vel2=[10,12,15,12,20,10,0]
+
+plt.plot(time,vel1,label='velocity of object1',marker='D',markerfacecolor='blue',markeredgecolor='black',linewidth=3.6,linestyle='dashed')
+plt.plot(time,vel2,label='velocity of object2',marker='D',markerfacecolor='red',markeredgecolor='black',linewidth=3.6,linestyle='dashed')
+plt.xlabel('velocity m/s')
+plt.ylabel('Time(s)')
+plt.title('Velocity Time graph')
+plt.legend()
+plt.show()
