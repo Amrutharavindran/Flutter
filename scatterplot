@@ -1,0 +1,8 @@
+import matplotlib.pyplot as plt
+
+x=[10,59,25,30,45]
+y=[12,45,60,70,55]
+color=['red','blue','orange','yellow','green']
+size=[190,400,130,220,219]
+plt.scatter(x,y,marker='*',c=color,s=size)
+plt.show()
