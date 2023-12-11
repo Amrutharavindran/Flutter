@@ -1,0 +1,17 @@
+#Line graph
+import matplotlib.pyplot as plt
+
+subjects=['Hindi','English','Mathematics','Social Science','Biology','Physics']
+mrk1=[60,70,55,80,78,80]
+mrk2=[90,75,80,60,76,85]
+
+plt.figure(figsize=(10,7))
+plt.plot(subjects,mrk1,label='Mark of student1',color='yellow',marker='o',linewidth=5,markerfacecolor='red',markersize=10,linestyle='dashed')
+plt.plot(subjects,mrk2,label='Mark of student2',color='green',marker='o',linewidth=5,markerfacecolor='blue',markersize=10,linestyle='dotted')
+
+
+plt.xlabel('Subjects')
+plt.ylabel('Marks')
+plt.title('Marks of 2 students')
+plt.legend(title='mark details')
+plt.show()
