@@ -1,0 +1,13 @@
+#piechart
+import matplotlib.pyplot as plt
+
+
+marks=[45,60,30,55,80]
+sub=['English','Maths','Hindi','Social','Biology']
+clr=['red','purple','grey','pink','lightblue']
+exp=[0,0,0.2,0,0]
+plt.figure(figsize=(8,9))
+plt.pie(marks,labels=sub,colors=clr,explode=exp,autopct='%2.1f%%')
+plt.title("AVERAGE MARK OF STUDENTS")
+plt.legend(title='subjects')
+plt.show()
