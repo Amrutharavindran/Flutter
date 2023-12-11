@@ -16,7 +16,7 @@ plt.title('Marks of 2 students')
 plt.legend(title='mark details')
 plt.show()
 
-
+............................................................................................................................................
 import matplotlib.pyplot as plt 
 
 time=[0,5,10,15,20,25,30]
@@ -28,5 +28,16 @@ plt.plot(time,vel2,label='velocity of object2',marker='D',markerfacecolor='red',
 plt.xlabel('velocity m/s')
 plt.ylabel('Time(s)')
 plt.title('Velocity Time graph')
+plt.legend()
+plt.show()
+..................................................................................................................................................
+import matplotlib.pyplot as plt 
+import numpy as np
+
+x=np.arange(1,11,1)
+y1=(2*x)+1
+y2=(2*x*x)+2
+plt.plot(x,y1,label='y=2x+1',linewidth=3)
+plt.plot(x,y2,label='y=2x^2+2',linewidth=3)
 plt.legend()
 plt.show()
