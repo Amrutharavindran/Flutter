@@ -4,13 +4,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import style
 
-time_data={'facebook':50,'instagram':120,'youtube':60,'snapchat':20}
-social_media=list(time_data.keys())
-time_spend=list(time_data.values())
+x=['facebook','instagram','snapchat','whatsapp']
+time=[120,60,70,30]
 style.use('ggplot')
 plt.figure(figsize=(10,5))
 color=['blue','purple','red','yellow']
-bars=plt.bar(social_media,time_spend,color=color,width=0.8)
+bars=plt.bar(x,time,color=color,width=0.8)
 plt.title("AVERAGE TIME SPEND IN SOCIAL MEDIA")
 plt.xlabel('social_medias')
 plt.ylabel('time_spent')
@@ -21,7 +20,7 @@ labels = ['Facebook', 'Instagram', 'YouTube', 'Snapchat']
 plt.legend(bars, labels)
 
 plt.show()
-
+..................................................................................................................
 #MULTIPLE BARCHART
 #multiple barchart
 import matplotlib.pyplot as plt
@@ -57,7 +56,29 @@ plt.legend()
 
 # Show the plot
 plt.show()
+.................................................................................................................
+import numpy as np
+import matplotlib.pyplot as plt
 
+x=[10,20,30,40,50]
+men = [22,30,35,35,26 ]  # Adjust the length to match the number of categories
+women= [25,32,43,35,29]
+
+bar_width = 0.35
+
+bar1 = np.arange(len(x))
+bar2 = bar1 + bar_width
+
+plt.bar(bar1, men, width=bar_width, label='men')
+plt.bar(bar2, women, width=bar_width, label='women')
+
+style.use('ggplot')
+plt.title('Marks of men and women')
+plt.xlabel('gender')
+plt.ylabel('marks')
+plt.xticks(bar1 + bar_width / 2, x)
+plt.legend()
+plt.show()
 
 
 
